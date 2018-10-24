@@ -1,0 +1,36 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.button--send {
+  position: relative;
+  background-color: #c4092f;
+  font-weight: 700;
+  border-radius: 3px;
+  margin-left: 18px;
+  padding-left: 24px;
+  padding-right: 43px;
+  padding-bottom: 3px;
+  padding-top: 1px;
+}
+
+.button--send::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 13px;
+  left: 127px;
+  background: url(../img/arrow_small_right.png) no-repeat 0 0;
+}
+
+

@@ -1,0 +1,43 @@
+.page-main {
+
+}
+
+.page-main_title-wrapper{
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 33px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-main_title {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 224px;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.page-main_title::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 33px;
+  top: 11px;
+  left: -10px;
+  transform: rotate(180deg);
+  background: url(../img/mark-exclam-1.png) no-repeat 0 0;
+}
+
+.page-main_title::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 33px;
+  bottom: 6px;
+  right: -11px;
+  background: url(../img/mark-exclam-2.png) no-repeat 0 0;
+}
