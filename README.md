@@ -5,7 +5,9 @@
 Шаблон предназначен для начала работы над проектом с использованием препроцессора LESS и сборщика проектов Gulp.
 
 * Автор: [Котов Михаил](https://github.com/KotovMikhail/)
+---
 
+* [ДЕМО САЙТА:](https://kotovmikhail.github.io/captain/build/index.html)
 ---
 
 ## Установка шаблона
