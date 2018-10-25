@@ -15,6 +15,7 @@
 
 .form__fieldset-colors {
   margin-bottom: 30px;
+  width: 30%;
 }
 
 .form__list {
@@ -30,12 +31,12 @@
 }
 
 .form__item--left {
-   width: 160px;
+   width: 47%;
    float: left;
 }
 
 .form__item--right {
-  width: 160px;
+  width: 47%;
   float: right;
 }
 
@@ -61,10 +62,6 @@
 .form__input--data::placeholder {
     font-size: 12px;
     color: #999999;
-}
-
-.form__list-color {
-  display: flex;
 }
 
 .form__item--color {
@@ -175,9 +172,9 @@
 .filter_menu.open ul {
   display: block;
   border-bottom: 1px solid #dcdcdc;
-   border-right: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
   z-index: 1000;
-     border-left: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
   background-color: #ffffff;
   position: absolute;
 }
@@ -200,4 +197,106 @@
   padding-bottom: 5px;
   padding-left: 9px;
   position: relative;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .form {
+    padding: 0;
+  }
+
+  .form__item {
+    width: 31.4%;
+  }
+
+  .form__item--tablet-width {
+    width: 100%;
+    order: 3;
+  }
+
+  .form__item--right {
+    float: none;
+  }
+
+  .form__item--name {
+    order: -1;
+  }
+
+  .form__item--left {
+    order: 1;
+  }
+
+  .form__item--right {
+    order: -1;
+  }
+
+  .form__item--left {
+    float: none;
+  }
+
+  .form__list--data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form__list--color {
+    flex: none;
+  }
+
+  .form__fieldset-colors {
+    width: 30%;
+    padding-top: 9px;
+  }
+
+  .form__fieldset--data {
+    margin-bottom: 31px;
+  }
+
+  .fieldset-wrapper {
+    justify-content: space-between;
+  }
+
+  .filter {
+    width: 31.5%;
+    float: none;
+  }
+
+  .filter_menu {
+    width: auto;
+  }
+
+  .filter_menu.open ul {
+    width: auto;
+  }
+
+  .filter_menu.open ul li {
+    width: 207px;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+
+  .form__fieldset-colors {
+    width: 34%;
+  }
+
+  .button--send {
+    width: 32%;
+    padding-left: 45px;
+  }
+
+  .button--send::after {
+    left: 69%;
+  }
+
+  .filter_menu.open ul li {
+    width: 290px;
+}
+
 }

@@ -16,10 +16,26 @@
 
 @media screen and (min-width: @tablet-width) {
 
-    .logo_wrapper {
-      display: block;
-      width: auto;
-      height: auto;
+  .page-header  {
+    position: relative;
+    padding-bottom: 89px;
+    flex:none;
   }
 
+    .logo_wrapper {
+      width: 493px;
+      height: 104px;
+      position: absolute;
+      display:block;
+      top:57px;
+      left: 46%;
+      transform: translate(-50%,-50%);
+  }
+
+}
+
+@media screen and (min-width: @desktop-width) {
+  .logo_wrapper {
+      left: 49%;
+  }
 }
